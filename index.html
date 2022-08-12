@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+  <meta name="author" content="Samuel Amaro Do Nascimento"/>
+  <meta name="description" content="Form Intro component with sign-up"/>
+  <meta name="keywords" content="HTML5, CSS3, JS, es6, exe, form, sign-up form, landing-page"/>
+  <link rel="stylesheet" href="./css/normalize.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+
+  <main class="main">
+    <article class="main__text-content">
+      <h1 class="title">Learn to code by watching others</h1>
+      <p class="description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </article>
+    <aside class="main__side-content">
+      <p class="main__price-announcement">
+        <strong class="price-promo">Try it free 7 days</strong> then $20/mo. thereafter
+      </p>
+      <form class="form" action="" name="user-registration">
+        <div class="form__row-container">
+          <input type="text" name="first-name" class="input input__text" placeholder="First Name" required/>
+        </div>
+        <div class="form__row-container">
+          <input type="text" name="last-name" class="input input__text" placeholder="Last Name" required/>
+        </div>
+        <div class="form__row-container">
+          <input type="email" name="email-address" class="input input__email" placeholder="Email Address" required/>
+        </div>
+        <div class="form__row-container">
+          <input type="password" name="password" class="input input__password" placeholder="Password" required/>
+        </div>
+        <div class="form__row-container">
+          <button type="submit" class="btn-submit">Claim your free trial</button>
+        </div>
+        <footer class="form__footer">
+          <p class="form__description-footer">By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
+        </footer>
+      </form>
+    </aside>
+  </main>
+
+</body>
+</html>
