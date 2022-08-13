@@ -25,21 +25,25 @@
       <form class="form" action="" name="user-registration">
         <div class="form__row-container">
           <input type="text" name="first-name" class="input input__text" placeholder="First Name" required/>
+          <span class="alert-error alert-error__input-text">First Name cannot be empty</span>
         </div>
         <div class="form__row-container">
           <input type="text" name="last-name" class="input input__text" placeholder="Last Name" required/>
+          <span class="alert-error alert-error__input-text">Last Name cannot be empty</span>
         </div>
         <div class="form__row-container">
           <input type="email" name="email-address" class="input input__email" placeholder="Email Address" required/>
+          <span class="alert-error alert-error__input-email">Looks like this is not an email</span>
         </div>
         <div class="form__row-container">
           <input type="password" name="password" class="input input__password" placeholder="Password" required/>
+          <span class="alert-error alert-error__input-password">Password cannot by empty</span>
         </div>
         <div class="form__row-container">
-          <button type="submit" class="btn-submit">Claim your free trial</button>
+          <button type="submit" class="btn-submit" title="Submit Registration">Claim your free trial</button>
         </div>
         <footer class="form__footer">
-          <p class="form__description-footer">By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
+          <p class="form__description-footer">By clicking the button, you are agreeing to our <strong class="terms-services">Terms and Services</strong></p>
         </footer>
       </form>
     </aside>
