@@ -34,6 +34,7 @@ body{
 
 .main{
     padding: 0 25px;
+    margin: 0 0 30px 0;
 }
 
 .title{
@@ -89,7 +90,7 @@ body{
     appearance: none;
     width: 100%;
     border: 1px solid #DEDEDE;/*hsl(0, 0%, 80%)*/
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 0.90rem;
     font-weight: 600;
     color: hsl(240, 1%, 0%);
@@ -147,14 +148,6 @@ body{
     outline: var(--dark-blue) solid 1px;
 }
 
-.input:invalid{
-    outline: #CF8D8D solid 2px;
-}
-
-.input:valid{
-    outline: #36BF7F solid 2px
-}
-
 .alert-error{
     display: block;
     width: 100%;
@@ -163,7 +156,18 @@ body{
     font-style: italic;
     padding-top: 8px;
     font-weight: 500;
-    color: hsl(348, 78%, 61%);
+    color: #e06868;
+}
+
+.is-invalid{
+    outline: #e27e7e solid 2px;
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: center right 25px;
+}
+
+.is-invalid__email::placeholder{
+    color: #ec4c4c;
 }
 
 /**breakpoint 376px**/
