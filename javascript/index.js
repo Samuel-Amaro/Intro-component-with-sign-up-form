@@ -41,6 +41,9 @@ function hiddenInvalid(input) {
 function showIsInvalid(input) {
     let elemMsg = document.createElement("span");
     elemMsg.setAttribute("class", "alert-error");
+    //atributes WAI-ARIAS
+    elemMsg.setAttribute("role", "alert");
+    elemMsg.setAttribute("aria-relevant", "all");
     if(input.type === "text" || input.type === "password") {
         elemMsg.textContent = `${input.dataset.name} cannot be empty`; 
         input.placeholder = '';
